@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2020 The SuperiorOS Project
+# Copyright (C) 2020 The AOSP Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -16,21 +16,18 @@
 
 $(call inherit-product, device/xiaomi/santoni/full_santoni.mk)
 
-# Inherit some common SuperiorOS stuff.
-$(call inherit-product, vendor/superior/config/common.mk)
+# Inherit some common AOSP stuff.
+$(call inherit-product, vendor/aosp/config/common.mk)
 
 PRODUCT_DEVICE := santoni
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi 4X
-PRODUCT_NAME := superior_santoni
+PRODUCT_NAME := aosp_santoni
 BOARD_VENDOR := Xiaomi
 PRODUCT_MANUFACTURER := Xiaomi
 
 # Boot animation
 TARGET_BOOT_ANIMATION_RES := 720
-
-# SUPERIOR TYPE
-SUPERIOR_BUILD_TYPE := HOMEMADE
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
