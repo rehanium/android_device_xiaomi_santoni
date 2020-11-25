@@ -26,8 +26,9 @@ PRODUCT_NAME := havoc_santoni
 BOARD_VENDOR := Xiaomi
 PRODUCT_MANUFACTURER := Xiaomi
 
-# Official
-export export HAVOC_BUILD_TYPE=Official
+#GAPPS
+TARGET_GAPPS_ARCH=arm64
+WITH_GAPPS=true
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1280
